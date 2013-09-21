@@ -5,6 +5,12 @@ Website: http://wwww.jimkollevik.se
 
 */
 
+html {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	
+	margin: 0;
+	padding: 0;
 }
