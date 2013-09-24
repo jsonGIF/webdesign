@@ -5,44 +5,36 @@
     <style type="text/css">
       html { height: 100% }
       body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100% }
+      #map_canvas { height: 50%;
+      width: 100%; }
     </style>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyH6Xr_ReCjnoksy48tszRTDpOaWdIu68&sensor=false">
-    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
     <script type="text/javascript">
 
       function initialize() {
-        var mapOptions = {
-          zoom: 4,
-          center: new google.maps.LatLng(-34.397, 150.644),
+       
+        var myLatlng = new google.maps.LatLng(59.333682, 18.015408);
+        var myLatlng2 = new google.maps.LatLng(59.298544, 17.996718);
+        var mapoptions = {
+          zoom: 8,
+          center: myLatlng,
           mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
+        }
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapoptions);
 
         var marker = new google.maps.Marker({
-          position: map.getCenter(),
+          position: myLatlng,
           map: map,
-          title: 'Click to zoom'
-        });
-
-        google.maps.event.addListener(map, 'center_changed', function() {
-          window.setTimeout(function() {
-            map.panTo(marker.getPosition());
-          }, 3000);
-        });
-
-        google.maps.event.addListener(marker, 'click', function() {
-          map.setZoom(8);
-          map.setCenter(marker.getPosition());
+          title: 'Im here!'
         });
       }
+
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
+
   </head>
   <body>
-    <div id="map-canvas"/>
+    <div id="map_canvas"/>
   </body>
 </html>
