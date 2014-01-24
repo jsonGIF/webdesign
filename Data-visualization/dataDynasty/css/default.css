@@ -1,0 +1,58 @@
+/**/
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #EAEAEA;
+	margin: 0;
+	padding: 0;
+}
+
+#frameLeft {
+	width: 50%;
+	background-color: red;
+	height: 100%;
+	float: left;
+	opacity: 0.4;
+}
+
+#frameRight {
+	width: 50%;
+	background-color: blue;
+	height: 100%;
+	float: left;
+	opacity: 0.4;
+}
+
+.qBox {
+	margin-top: 50%;
+	margin-left: 29%;
+	height: 75px;
+	width: 250px;
+	border: 2px solid #FFFFFF;
+}
+
+.qBox:hover {
+	background-color: #FFFFFF;
+}
+
+.qBox h3 {
+	text-align: center;
+	color: white;
+}
+
+#qText {
+	position: absolute;
+	margin-top: 18%;
+	margin-left: 38%;
+}
+
+#btn {
+	position: absolute;
+	z-index: 1;
+}
+
+
