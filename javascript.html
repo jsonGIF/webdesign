@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>
+	</title>
+	<script type="text/javascript" src="exercises_js.js"></script>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+var i=0;
+var dds = ['Jim','Rita','Petra']
+var names = ['Dan', 'Thomas B', 'Victor'];
+
+function findLongestElement(array) {
+	var longest = names[0];
+	for (var i=0;i<array.length;i++) {
+		if (longest.length<array[i].length) {
+			longest = array[i]
+		}
+	}
+	return longest;
+}
+
+var longestName = findLongestElement(names);
+console.log(longestName); // should return 'Thomas B'
+
+
+</script>
+
+</body>
+</html>
+
+
