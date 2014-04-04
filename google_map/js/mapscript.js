@@ -11,7 +11,9 @@ function initialize() {
         var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
           var trucks = [
           [59.333682, 18.015408],
-          [59.298544, 17.996718]
+          [59.298544, 17.996718],
+          [59.866538, 17.641189],
+          [59.894538, 17.651189]
           ];
           //script counts the array of coordinates
           for (var i = 0; i < trucks.length; i++) {
