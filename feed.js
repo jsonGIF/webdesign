@@ -1,5 +1,5 @@
 // new feed javascript
-
+//counts the longest name in the array
 var i=0;
 var names = ['Dan', 'Thomas B', 'Victor'];
 
